@@ -23,3 +23,6 @@ This repository contains my code for Cookr Hackathon 2024.
   * To achieve the above functionality we can increase the number of websites we scrape the information from instead of limiting to only one website (Wikipedia).
   * We can also enhance the NLP model to detect all words related to food industry and then choose the required tags from them.
 * The above suggestions could not be implemented by me, due to the limited time constraints.
+
+## Question 2
+
