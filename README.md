@@ -1,6 +1,6 @@
 # Cookr-Hackathon 2024
 This repository contains my code for Cookr Hackathon 2024. 
-## Question 1 
+## Question 1 - Item Categorization. 40 marks
 Create a model or research the necessary steps to create a model for categorizing items. When the cook adds an item to their kitchen, it should be automatically categorized into multiple categories. 
 ### Problems faced 
 * Understanding the problem statement
@@ -25,5 +25,52 @@ Create a model or research the necessary steps to create a model for categorizin
   * We can also enhance the NLP model to detect all words related to food industry and then choose the required tags from them.
 * The above suggestions could not be implemented by me, due to the limited time constraints.
 
-## Question 2
-
+## Question 2 - Last Mile Delivery Batching. 60 marks
+It is crucial in today’s last-mile delivery ecosystem to optimize for speed, and cost efficiencies. Smarter algorithms play a crucial role in the ecommerce marketplace deliveries We need to group/batch the delivery of multiple items to the same rider without losing time. Here are several scenarios where we need smart operational research algorithms.
+* Rule # 1
+  * Two orders - From the same kitchen.
+  * To the same customer.
+  * Ready at the same time (10 mins apart).
+  * Assign the pick-up to the same rider.
+* Rule # 2:
+  * Two orders.
+  * From two different kitchens (1 km apart).
+  * To the same customer.
+  * Ready at the same time (10 mins apart).
+  * Assign the pick-up to the same rider.
+* Rule # 3:
+  * Two orders.
+  * From the same kitchen.
+  * To two different customers (1 km apart).
+  * Ready at the same time (10 mins apart).
+  * Assign the pick-up to the same rider.
+* Rule # 4:
+  * Two orders.
+  * From two different kitchens (1 km apart).
+  * To the same customer.
+  * Ready at the same time (10 mins apart).
+  * Assign the pick-up to the same rider.
+* Rule # 5:
+  * Two orders.
+  * From two different kitchens (1 km apart).
+  * To the same customer.
+  * Ready at the same time (10 mins apart).
+  * Assign the pick-up to the same rider.
+* Rule # 6:
+  * Two orders. 
+  * To the same customer.
+  * 2nd kitchens pick up on the way to the customer.
+  * Ready at the time the rider reaches the second kitchen (10 mins apart).
+  * Assign the pick-up to the same rider.
+* Rule # 7:
+  * Two orders.
+  * 2nd customers drop on the way to the 1st customer (Vice Versa).
+  * 2nd kitchens pick up on the way to the customer.
+  * Ready at the same time (10 mins apart or by the time rider reaches the kitchen).
+  * Assign the pick-up to the same rider.
+* Rule # 8:
+  * Two orders.
+  * From the same kitchen.
+  * 2nd customers drop on the way to the customer 1st (Vice Versa).
+  * Ready at the same time (10 mins apart).
+  * Assign the pick-up to the same rider.
