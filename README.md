@@ -19,7 +19,7 @@ Create a model or research the necessary steps to create a model for categorizin
 <img width="959" alt="Ragi Dosa" src="https://github.com/Artemis1702/Cookr-Hackathon/assets/76508539/7de21f29-c56c-4439-ae30-a14499665fdf">
 <img width="959" alt="Chicken Vindaloo" src="https://github.com/Artemis1702/Cookr-Hackathon/assets/76508539/3751c8c3-f508-4b57-916c-10d6e8598681">
 
-### Enhancements and Directions for Further Developmen
+### Enhancements and Directions for Further Development
 * Our main Idea was to create something like chatGPT but only for foods. Which would give the tags and other information for the input Food Item.
   * To achieve the above functionality we can increase the number of websites we scrape the information from instead of limiting to only one website (Wikipedia).
   * We can also implement a web crawler and index required web pages and then scrape all of them.
@@ -75,11 +75,18 @@ It is crucial in today’s last-mile delivery ecosystem to optimize for speed, a
   * 2nd customers drop on the way to the customer 1st (Vice Versa).
   * Ready at the same time (10 mins apart).
   * Assign the pick-up to the same rider.
+    
 ### Challenges Faced
 * Finding a dataset with the relevant data
+  
 ### Our Approach
 * Preprocessing was performed on the data to remove unnecessary attributes and extract available rider data.
 * Since dataset was very large (> 1GB), computation was performed only on a subset (region) of the dataset (Chongqing, China).
 * Orders need to be grouped based on various attributes such as pickup time, pickup location and delivery location. For this, K-means clustering was performed separately based on each attribute. Once the clusters were obtained, they were merged based on cluster similarity.
 * After merging the clusters, it was found that the number exceeded the number of riders available in that region.
 * To solve this issue, the order clusters were divided into batches and assigned to riders.
+
+### Enhancements and Directions for Further Development
+* Other clustering algorithms such as DBSCAN can be used to cluster the data.
+* A variant of DBSCAN, which is called ST-DBSCAN (Spatio-Temporal DBSCAN) can be used to avoid clustering the data separately and then merging.
+* The model can be modified such that each cluster bin can have a maximum size, so that rider assignmnet can be done directly (Each cluster corresponds to a particular rider).
