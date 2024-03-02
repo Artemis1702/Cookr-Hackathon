@@ -1,4 +1,4 @@
-# Cookr-Hackathon 2024
+<img width="927" alt="Screenshot 2024-03-02 at 11 00 09 AM" src="https://github.com/Artemis1702/Cookr-Hackathon/assets/83810119/15542d5b-7f6e-4fd2-9a89-5f9d7a426b91"># Cookr-Hackathon 2024
 This repository contains my code for Cookr Hackathon 2024. 
 ## Question 1 - Item Categorization. 40 marks
 Create a model or research the necessary steps to create a model for categorizing items. When the cook adds an item to their kitchen, it should be automatically categorized into multiple categories. 
@@ -85,6 +85,10 @@ It is crucial in today’s last-mile delivery ecosystem to optimize for speed, a
 * Orders need to be grouped based on various attributes such as pickup time, pickup location and delivery location. For this, K-means clustering was performed separately based on each attribute. Once the clusters were obtained, they were merged based on cluster similarity.
 * After merging the clusters, it was found that the number exceeded the number of riders available in that region.
 * To solve this issue, the order clusters were divided into batches and assigned to riders.
+
+### Output
+<img width="927" alt="Rider Batch Assignment" src="https://github.com/Artemis1702/Cookr-Hackathon/assets/83810119/555e841d-8854-487a-864c-1b62db26d003">
+
 
 ### Enhancements and Directions for Further Development
 * Other clustering algorithms such as DBSCAN can be used to cluster the data.
