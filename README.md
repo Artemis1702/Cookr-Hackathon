@@ -1,4 +1,4 @@
-<img width="927" alt="Screenshot 2024-03-02 at 11 00 09 AM" src="https://github.com/Artemis1702/Cookr-Hackathon/assets/83810119/15542d5b-7f6e-4fd2-9a89-5f9d7a426b91"># Cookr-Hackathon 2024
+# Cookr-Hackathon 2024
 This repository contains my code for Cookr Hackathon 2024. 
 ## Question 1 - Item Categorization. 40 marks
 Create a model or research the necessary steps to create a model for categorizing items. When the cook adds an item to their kitchen, it should be automatically categorized into multiple categories. 
