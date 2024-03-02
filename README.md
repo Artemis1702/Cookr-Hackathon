@@ -1,5 +1,5 @@
 # Cookr-Hackathon 2024
-This repository contains my code for Cookr Hackathon 2024. 
+This repository contains the code for Cookr Hackathon 2024. 
 ## Question 1 - Item Categorization. 40 marks
 Create a model or research the necessary steps to create a model for categorizing items. When the cook adds an item to their kitchen, it should be automatically categorized into multiple categories. 
 ### Challenges faced 
