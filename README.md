@@ -20,7 +20,7 @@ Create a model or research the necessary steps to create a model for categorizin
 <img width="959" alt="Chicken Vindaloo" src="https://github.com/Artemis1702/Cookr-Hackathon/assets/76508539/3751c8c3-f508-4b57-916c-10d6e8598681">
 
 ### Enhancements and Directions for Further Developmen
-* My main Idea was to create something like chatGPT but only for foods. Which would give the tags and other information for the input Food Item.
+* Our main Idea was to create something like chatGPT but only for foods. Which would give the tags and other information for the input Food Item.
   * To achieve the above functionality we can increase the number of websites we scrape the information from instead of limiting to only one website (Wikipedia).
   * We can also implement a web crawler and index required web pages and then scrape all of them.
   * We can also enhance the NLP model to detect all words related to food industry and then choose the required tags from them. 
