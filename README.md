@@ -22,7 +22,8 @@ Create a model or research the necessary steps to create a model for categorizin
 ### Enhancements and Directions for Further Developmen
 * My main Idea was to create something like chatGPT but only for foods. Which would give the tags and other information for the input Food Item.
   * To achieve the above functionality we can increase the number of websites we scrape the information from instead of limiting to only one website (Wikipedia).
-  * We can also enhance the NLP model to detect all words related to food industry and then choose the required tags from them.
+  * We can also implement a web crawler and index required web pages and then scrape all of them.
+  * We can also enhance the NLP model to detect all words related to food industry and then choose the required tags from them. 
 * The above suggestions could not be implemented by me, due to the limited time constraints.
 
 ## Question 2 - Last Mile Delivery Batching. 60 marks
