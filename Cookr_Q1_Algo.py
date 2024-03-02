@@ -6,12 +6,13 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 nlp = spacy.load("en_core_web_sm")
 
+# Scrape for the food item
 def scrape_food_info(food_item):
     food_name, food_description, tags = scrape_single_word_food_info(food_item)
     
     if food_name and food_description:
         return food_name, food_description, tags
-    
+    # Check for multiple words and scrape them individually
     if " " in food_item:
         tags = set()
         words = food_item.split()
@@ -49,7 +50,7 @@ def scrape_food_info(food_item):
         return None, None, None
 
 
-
+# Scrape for the single words in a food item name
 def scrape_single_word_food_info(food_item, use_alt_url=False):
     url = f"https://en.wikipedia.org/wiki/{food_item}"
     response = requests.get(url)
@@ -61,6 +62,7 @@ def scrape_single_word_food_info(food_item, use_alt_url=False):
         course = None
         place_of_origin = None
 
+        # Check for infobox
         if infobox:
             rows = infobox.find_all("tr")
             for row in rows:
@@ -79,7 +81,7 @@ def scrape_single_word_food_info(food_item, use_alt_url=False):
             if not all([region_or_state, course, place_of_origin]):
                 if use_alt_url:
                     return None, None, None  
-                
+                # Check for alternate url if first url does not yield desired results
                 alt_url = f"https://en.wikipedia.org/wiki/{food_item}_(food)"
                 alt_response = requests.get(alt_url)
                 if alt_response.status_code == 200:
@@ -144,6 +146,7 @@ def scrape_single_word_food_info(food_item, use_alt_url=False):
             else:
                 return None, None, None
         else:
+            # Check for alternate url if first url does not yield desired results
             alt_url = f"https://en.wikipedia.org/wiki/{food_item}_(food)"
             alt_response = requests.get(alt_url)
             if alt_response.status_code == 200:
@@ -195,7 +198,7 @@ def scrape_single_word_food_info(food_item, use_alt_url=False):
         return None, None, None
 
 
-
+# A basic NLP model to find countries and Positive adjectives from food description and generate tags
 def generate_tags(food_description, region_or_state=None, course=None, place_of_origin=None):
     tags = set()  
     doc = nlp(food_description)
